@@ -151,7 +151,7 @@ src/config/base/myTerminalCommands.tsx
 Customize your terminal bar text that show on top of any card container in the following way:
 
 ```bash
-src/config/base/myTerminalCommands.tsx
+src/config/base/terminalBar.ts
 ```
 
 ## 📦 Deployment
