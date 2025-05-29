@@ -1,0 +1,46 @@
+.socialContainer {
+  position: relative;
+  overflow: hidden;
+  height: 4.3rem;
+}
+.socialCmd {
+  transition:
+    transform 200ms linear,
+    opacity 200ms linear;
+  position: absolute;
+  font-size: 9px;
+  font-weight: bold;
+  color: var(--terminalColor);
+  inset: 0;
+  transform: translateY(5rem);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000000ce;
+  z-index: 1000;
+}
+.socialCmd span:first-child {
+  color: #fff;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialIcon span {
+  transition: all 200ms linear;
+}
+
+.socialContainer:hover .socialCmd {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.socialContainer:hover .socialIcon span:first-child {
+  transform: translateY(10px) scale(2);
+}
+.socialContainer:hover .socialIcon span:last-child {
+  display: none;
+  margin: 0 !important;
+}
